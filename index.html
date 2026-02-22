@@ -61,6 +61,84 @@
 
     <div class="max-w-[1110px] mx-auto h-px bg-[#E6E7E9] my-[30px]"></div>
 
+    <main class="max-w-[1110px] mx-auto">
+      <header class="space-y-6">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-semibold text-[#002C5C]">Available Jobs</h2>
+
+          <p
+            id="show-interview-count"
+            class="font-medium text-[#64748B] hidden"
+          >
+            <span class="interview-job-count">0</span>
+            of
+            <span class="total-job-count">0</span>
+          </p>
+
+          <p id="show-rejected-count" class="font-medium text-[#64748B] hidden">
+            <span class="rejected-job-count">0</span>
+            of
+            <span class="total-job-count">0</span>
+          </p>
+
+          <p id="show-total-count" class="font-medium text-[#64748B]">
+            <span class="total-job-count">0</span>
+            Jobs
+          </p>
+        </div>
+
+        <div id="filter-btn-container" class="space-x-2">
+          <button
+            onclick="showFilterSection('all-filter-btn')"
+            id="all-filter-btn"
+            class="active-filter"
+          >
+            All
+          </button>
+
+          <button
+            onclick="showFilterSection('interview-filter-btn')"
+            id="interview-filter-btn"
+            class="default-filter"
+          >
+            Interview
+          </button>
+
+          <button
+            onclick="showFilterSection('rejected-filter-btn')"
+            id="rejected-filter-btn"
+            class="default-filter"
+          >
+            Rejected
+          </button>
+        </div>
+      </header>
+
+      <div class="relative">
+        <div
+          class="px-10 py-10 mt-4 text-center absolute top-0 left-0 -z-10 w-full"
+        >
+          <img src="./jobs.png" alt="" class="mx-auto" />
+          <h2 class="font-semibold text-[#002C5C] text-2xl">
+            No jobs available
+          </h2>
+          <p class="text-[#64748B]">
+            Check back soon for new job opportunities
+          </p>
+        </div>
+
+        <section
+          id="interview-jobs-container"
+          class="space-y-4 mt-4 hidden"
+        ></section>
+        <section
+          id="rejected-jobs-container"
+          class="space-y-4 mt-4 hidden"
+        ></section>
+        <section id="all-jobs-container" class="space-y-4 mt-4"></section>
+      </div>
+    </main>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
