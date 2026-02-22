@@ -1,0 +1,26 @@
+* { font-family: "Geist", sans-serif; }
+
+.active-filter {
+  background-color:#3B82F6;
+  color: white;
+  border-radius: 4px;
+  width: 80px;
+  padding: 8px 12px;
+  font-size: 12px; 
+  font-weight: 600; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  cursor: pointer;
+}
+
+.default-filter {
+  background-color: white;
+  color: #64748B;
+  border: 1px solid #F1F2F4;
+  border-radius: 4px;
+  width: 80px;
+  padding: 8px 12px;
+  font-size: 12px; 
+  font-weight: 600; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  cursor: pointer;
+}
