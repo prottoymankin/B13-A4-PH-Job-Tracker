@@ -10,51 +10,28 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
 
     <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-[#F8FAFC] px-5">
     <header class="max-w-[1110px] mx-auto space-y-5">
-      <h1 class="text-[32px] text-[#002C5C] font-bold">
-        Job Application Tracker
-      </h1>
+      <h1 class="text-[32px] text-[#002C5C] font-bold">Job Application Tracker</h1>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div
-          class="p-4 bg-white rounded-lg border border-[#F1F2F4] space-y-2 shadow-sm"
-        >
+        <div class="p-4 bg-white rounded-lg border border-[#F1F2F4] space-y-2 shadow-sm">
           <p class="text-sm font-medium text-[#323B49]">Total</p>
-          <span class="total-job-count text-2xl text-[#002B70] font-bold"
-            >0</span
-          >
+          <span class="total-job-count text-2xl text-[#002B70] font-bold">0</span>
         </div>
-        <div
-          class="p-4 bg-white rounded-lg border border-[#F1F2F4] space-y-2 shadow-sm"
-        >
+        <div class="p-4 bg-white rounded-lg border border-[#F1F2F4] space-y-2 shadow-sm">
           <p class="text-sm font-medium text-[#323B49]">Interview</p>
-          <span class="interview-job-count text-2xl text-[#10B981] font-bold"
-            >0</span
-          >
+          <span class="interview-job-count text-2xl text-[#10B981] font-bold">0</span>
         </div>
-        <div
-          class="p-4 bg-white rounded-lg border border-[#F1F2F4] space-y-2 shadow-sm"
-        >
+        <div class="p-4 bg-white rounded-lg border border-[#F1F2F4] space-y-2 shadow-sm">
           <p class="text-sm font-medium text-[#323B49]">Rejected</p>
-          <span class="rejected-job-count text-2xl text-[#EF4444] font-bold"
-            >0</span
-          >
+          <span class="rejected-job-count text-2xl text-[#EF4444] font-bold">0</span>
         </div>
       </div>
     </header>
@@ -65,25 +42,14 @@
       <header class="space-y-6">
         <div class="flex items-center justify-between">
           <h2 class="text-xl font-semibold text-[#002C5C]">Available Jobs</h2>
-
-          <p
-            id="show-interview-count"
-            class="font-medium text-[#64748B] hidden"
-          >
-            <span class="interview-job-count">0</span>
-            of
-            <span class="total-job-count">0</span>
+          <p id="show-interview-count" class="font-medium text-[#64748B] hidden">
+            <span class="interview-job-count">0</span> of <span class="total-job-count">0</span>
           </p>
-
           <p id="show-rejected-count" class="font-medium text-[#64748B] hidden">
-            <span class="rejected-job-count">0</span>
-            of
-            <span class="total-job-count">0</span>
+            <span class="rejected-job-count">0</span> of <span class="total-job-count">0</span>
           </p>
-
           <p id="show-total-count" class="font-medium text-[#64748B]">
-            <span class="total-job-count">0</span>
-            Jobs
+            <span class="total-job-count">0</span> Jobs
           </p>
         </div>
 
