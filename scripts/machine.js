@@ -54,9 +54,7 @@ function createJobCard(job) {
       </div>
     </div>
 
-    <div class="w-8 h-8 rounded-full border broder-[#F1F2F4] text-[#64748B] flex items-center justify-center cursor-pointer">
-      <i data-id="${job.id}" class="delete-icon fa-solid fa-trash"></i>
-    </div>
+    <i data-id="${job.id}" class="delete-icon fa-solid fa-trash text-[#64748B] text-xl"></i>
   `
   return div;
 }
