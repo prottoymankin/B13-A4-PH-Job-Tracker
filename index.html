@@ -114,29 +114,32 @@
         </div>
       </header>
 
-      <div class="relative">
-        <div
-          class="px-10 py-10 mt-4 text-center absolute top-0 left-0 -z-10 w-full"
-        >
+      <section>
+        <div id="interview-empty" class="px-10 py-10 mt-4 text-center hidden">
           <img src="./assets/jobs.png" alt="" class="mx-auto" />
-          <h2 class="font-semibold text-[#002C5C] text-2xl">
-            No jobs available
-          </h2>
-          <p class="text-[#64748B]">
-            Check back soon for new job opportunities
-          </p>
+          <h2 class="font-semibold text-[#002C5C] text-2xl"> No jobs available</h2>
+          <p class="text-[#64748B]"> Check back soon for new job opportunities </p>
         </div>
+        <div id="interview-jobs-container" class="space-y-4 mt-4 hidden"></div>
+      </section>
 
-        <section
-          id="interview-jobs-container"
-          class="space-y-4 mt-4 hidden"
-        ></section>
-        <section
-          id="rejected-jobs-container"
-          class="space-y-4 mt-4 hidden"
-        ></section>
-        <section id="all-jobs-container" class="space-y-4 mt-4"></section>
-      </div>
+      <section>
+        <div id="rejected-empty" class="px-10 py-10 mt-4 text-center hidden">
+          <img src="./assets/jobs.png" alt="" class="mx-auto" />
+          <h2 class="font-semibold text-[#002C5C] text-2xl"> No jobs available</h2>
+          <p class="text-[#64748B]"> Check back soon for new job opportunities </p>
+        </div>
+        <div id="rejected-jobs-container" class="space-y-4 mt-4 hidden"></div>
+      </section>
+
+      <section>
+        <div id="all-empty" class="px-10 py-10 mt-4 text-center hidden">
+          <img src="./assets/jobs.png" alt="" class="mx-auto" />
+          <h2 class="font-semibold text-[#002C5C] text-2xl"> No jobs available</h2>
+          <p class="text-[#64748B]"> Check back soon for new job opportunities </p>
+        </div>
+        <div id="all-jobs-container" class="space-y-4 mt-4"></div>
+      </section>
     </main>
 
     <script src="./scripts/jobs.js"></script>

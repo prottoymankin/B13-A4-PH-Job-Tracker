@@ -41,6 +41,7 @@ allJobsContainer.addEventListener("click", function(e) {
   renderAllJobs();
   renderInterviewJobs();
   renderRejectedJobs();
+  showAllSectionEmpty();
 });
 
 function renderInterviewJobs() {
@@ -74,6 +75,7 @@ interviewJobsContainer.addEventListener("click", function(e) {
   renderAllJobs();
   renderInterviewJobs();
   renderRejectedJobs();
+  showInterviewSectionEmpty();
 })
 
 rejectedJobsContainer.addEventListener("click", function(e) {
@@ -86,4 +88,11 @@ rejectedJobsContainer.addEventListener("click", function(e) {
   renderAllJobs();
   renderRejectedJobs();
   renderInterviewJobs();
+  showRejectedSectionEmpty();
 })
+
+function showInterviewSectionEmpty() {
+  if(document.querySelector(".interview-job-count").textContent === "0") {
+    document.querySelector("#interview-empty").classList.remove("hidden");
+  }
+}

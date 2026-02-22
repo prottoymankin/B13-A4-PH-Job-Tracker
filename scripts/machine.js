@@ -87,20 +87,54 @@ function showFilterSection(id) {
     showInterviewCount.classList.remove("hidden");
     showRejectedCount.classList.add("hidden");
     showTotalCount.classList.add("hidden");
+    showInterviewSectionEmpty();
+    hideRejectedSectionEmpty();
+    hideAllSectionEmpty();
   } else if (id === "rejected-filter-btn") {
     rejectedJobsContainer.classList.remove("hidden");
     showRejectedCount.classList.remove("hidden");
     showInterviewCount.classList.add("hidden");
     showTotalCount.classList.add("hidden");
+    hideInterviewSectionEmpty();
+    showRejectedSectionEmpty();
+    hideAllSectionEmpty();
+
   } else if (id === "all-filter-btn") {
     allJobsContainer.classList.remove("hidden");
     showTotalCount.classList.remove("hidden");
     showInterviewCount.classList.add("hidden");
     showRejectedCount.classList.add("hidden");
+    hideInterviewSectionEmpty();
+    hideRejectedSectionEmpty();
+    showAllSectionEmpty();
   }
 }
 
 function deleteJob(e) {
   const jobId = e.target.dataset.id;
   jobs = jobs.filter(job => job.id !== jobId);
+}
+
+function showRejectedSectionEmpty() {
+  if(document.querySelector(".rejected-job-count").textContent === "0") {
+    document.querySelector("#rejected-empty").classList.remove("hidden");
+  }
+}
+
+function showAllSectionEmpty() {
+  if(jobs.length === 0) {
+    document.querySelector("#all-empty").classList.remove("hidden");
+  }
+}
+
+function hideInterviewSectionEmpty() {
+  document.querySelector("#interview-empty").classList.add("hidden");
+}
+
+function hideRejectedSectionEmpty() {
+  document.querySelector("#rejected-empty").classList.add("hidden");
+}
+
+function hideAllSectionEmpty() {
+  document.querySelector("#all-empty").classList.add("hidden");
 }
