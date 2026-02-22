@@ -1,10 +1,3 @@
-const allJobsContainer = document.querySelector("#all-jobs-container");
-const interviewJobsContainer = document.querySelector("#interview-jobs-container");
-const rejectedJobsContainer = document.querySelector("#rejected-jobs-container");
-const totalJobCount = document.querySelectorAll(".total-job-count");
-const interviewJobCount = document.querySelectorAll(".interview-job-count");
-const rejectedJobCount = document.querySelectorAll(".rejected-job-count");
-
 function changeStatus(e, className) {
   const jobId = e.target.dataset.id;
   for (const job of jobs) {
